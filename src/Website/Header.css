@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.logo_img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 12px;
+}
+
+.ul {
+    display: flex;
+
+}
+
+li {
+    list-style: none;
+    font-size: 1.3rem;
+    
+    /* display: block;
+    padding: 3px 22px; */
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    padding: 3px 22px;
+    color: white;
+}
+
+.header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*Main Content */
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 400px;
+
+}
+
+
+.main_content::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("./Image/mainImage.jpg") no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.79;
+}
+
+.h2 {
+    font-size: 3.8rem;
+    padding: 12px;
+    color: white;
+}
+
+.p {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.buton {
+    padding: 4px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin: 17px;
+    background-color: brown;
+    color: white;
+
+}
+
+/* Food Menu */
+
+.food_item {
+    margin-top: 280px;
+}
+
+.food_h1 {
+     text-align: center;
+}
+
+.food_menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.food_box {
+    border: 1px solid black;
+    padding: 10px;
+    /* height: 400px;
+    width: 400px; */
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.food_box > img {
+    width: 250px;
+    height: 200px;
+}
+
+.food_box > h3 {
+    text-align: center;
+}
+
+.food_box > p {
+    text-align: center;
+}
+
+
+
